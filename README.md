@@ -1,13 +1,14 @@
-# React + Vite
+my_button.jsx
+https://react.dev/learn/preserving-and-resetting-state
+https://react.dev/learn 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1.let say currently you were rendering MyButton compontent , there was an state assigned to it , let say click you about in navigation bar then now this MyButton will be deleted from dom state which was holding value of this component will  also erase, when again click on mybutton the from start then component will render it self again a node will be created in dom of this component new state will assign to this  
 
-Currently, two official plugins are available:
+-> to store remember value you can use localstorage 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. let say you are calling component multiple times or resusing in multiple time then seprate state will be assign for each component 
+as in Counter page 
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# React-Proof-of-Work
+3.  setCount(localStorage.getItem("count"+id)) - > if we simple right this in componet without using useffect then we will get error of calling component multiple time 
+reason - > as this will set state(count), as we know if state change then componenet will rerender after rerender again state will change again will render so this process will continue infinite 
+solution -> Use useeffect to prevent rerendering as this will stop rerendering as 

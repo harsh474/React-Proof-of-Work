@@ -3,6 +3,9 @@ import Sidebar from "./components/Sidebar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Learning from "./pages/Learning";
+import Counter from "./pages/Counter";
+import Stopwatch from "./pages/Stopwatch";
+import Usearray from "./pages/Usearray";
 export default function App() {
   return (
       <div className="flex h-screen">
@@ -15,6 +18,9 @@ export default function App() {
             <Route path="/" element={<Learning/>} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/counter" element={<Counter/>} />
+            <Route path="/stopwatch" element={<Stopwatch/>} />
+            <Route path="/usearray" element={<Usearray/>}/>
           </Routes>
         </div>
       </div>
