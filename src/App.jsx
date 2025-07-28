@@ -15,8 +15,8 @@ export default function App() {
         {/* Main Content - 85% width */}
         <div className="flex-1 p-6  bg-black overflow-y-auto text-white">
           <Routes>
-            <Route path="/" element={<Learning/>} />
-            <Route path="/about" element={<About />} />
+            <Route path="/learning" element={<Learning/>} />
+            <Route path="/" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/counter" element={<Counter/>} />
             <Route path="/stopwatch" element={<Stopwatch/>} />
