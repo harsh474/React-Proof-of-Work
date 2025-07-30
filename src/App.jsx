@@ -6,6 +6,10 @@ import Learning from "./pages/Learning";
 import Counter from "./pages/Counter";
 import Stopwatch from "./pages/Stopwatch";
 import Usearray from "./pages/Usearray";
+import UseDebounce from "./pages/UseDebounce";
+import DataTable from "./pages/DataTable";
+import DiceRoller from "./pages/DiceRoller";
+import LikeUnlike from "./pages/LikeUnlike";
 export default function App() {
   return (
       <div className="flex h-screen">
@@ -21,6 +25,10 @@ export default function App() {
             <Route path="/counter" element={<Counter/>} />
             <Route path="/stopwatch" element={<Stopwatch/>} />
             <Route path="/usearray" element={<Usearray/>}/>
+            <Route path="/usedebounce" element={<UseDebounce/>}/>
+            <Route path="/datatable" element={<DataTable/>}/>
+            <Route path="/diceroller" element={<DiceRoller/>}/>
+            <Route path="/like&unlike" element={<LikeUnlike/>}/>
           </Routes>
         </div>
       </div>

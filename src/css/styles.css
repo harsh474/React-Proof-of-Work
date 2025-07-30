@@ -1,0 +1,14 @@
+body {
+  font-family: sans-serif;
+} 
+
+.button-hover{ 
+  border-color:#f00 ; 
+  color:#f00 ;
+}  
+
+.button-click{ 
+  color: white; 
+  background-color: #f00;
+}  
+
