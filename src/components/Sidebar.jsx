@@ -12,7 +12,11 @@ const Sidebar = () => {
     { to: "/usedebounce", label: "UseDebounce" },
     { to: "/datatable", label: "Pagination & DataTable" },
     { to: "/diceroller", label: "Dice Roller" },
-    { to: "/like&unlike", label: "Like Unlike" },
+    { to: "/like&unlike", label: "Like Unlike" }, 
+    { to: "/starrating", label: "Star Rating" }, 
+    { to: "/todolist", label: "Todo List" }, 
+    { to: "/trafficlight", label: "Traffic Light" }, 
+
   ];
 
   return (

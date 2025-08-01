@@ -1,0 +1,48 @@
+import { useState, useRef, useEffect } from 'react';
+import '../css/staricon.css'
+
+export default function StarRating(props) {
+  const [filledstar, setFilledstar] = useState(props.filledStars);
+  const arr = Array.from({ length: props.maxxstar }, (v, i) => i);
+  const ref = useRef(null); 
+ 
+  useEffect(()=>{ 
+    ref.current = props.filledStars;
+    console.log("ref.current after render",ref.current); 
+    // setFilledstar(ref.current);
+  },[props.filledStars]) 
+   console.log("props.filledStars",props.filledStars);
+  console.log("ref.current",ref.current);
+  
+  return (
+    <div style={{ display: 'flex', gap: '2px' }}>
+      {
+        arr.map((item, index) => (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className={`star-icon ${index < filledstar ? 'star-icon-filled' : ''}`}
+            onMouseEnter={(e) => setFilledstar(index + 1)}
+            
+            onClick={() => {
+              ref.current = index + 1;
+              setFilledstar(index + 1);
+            }}
+            onMouseLeave={(e) => setFilledstar(ref.current)}
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="1">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+            />
+          </svg>
+
+
+        ), [])
+
+      }
+    </div>
+  );
+}

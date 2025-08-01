@@ -10,6 +10,9 @@ import UseDebounce from "./pages/UseDebounce";
 import DataTable from "./pages/DataTable";
 import DiceRoller from "./pages/DiceRoller";
 import LikeUnlike from "./pages/LikeUnlike";
+import UseStarRating from "./pages/UseStarRating";
+import TodoList from "./pages/TodoList"; 
+import TrafficLight from "./pages/TrafficLight";
 export default function App() {
   return (
       <div className="flex h-screen">
@@ -17,7 +20,7 @@ export default function App() {
         <Sidebar />
 
         {/* Main Content - 85% width */}
-        <div className="flex-1 p-6  bg-black overflow-y-auto text-white">
+        <div className="flex-1 p-6  overflow-y-auto " style={{color:'black', backgroundColor:'lightyellow'}}  >
           <Routes>
             <Route path="/learning" element={<Learning/>} />
             <Route path="/" element={<About />} />
@@ -29,6 +32,9 @@ export default function App() {
             <Route path="/datatable" element={<DataTable/>}/>
             <Route path="/diceroller" element={<DiceRoller/>}/>
             <Route path="/like&unlike" element={<LikeUnlike/>}/>
+            <Route path="/starrating" element={<UseStarRating/>}/>
+            <Route path="/todolist" element={<TodoList/>}/>
+            <Route path="/trafficlight" element={<TrafficLight/>}/>
           </Routes>
         </div>
       </div>
