@@ -13,6 +13,7 @@ import LikeUnlike from "./pages/LikeUnlike";
 import UseStarRating from "./pages/UseStarRating";
 import TodoList from "./pages/TodoList"; 
 import TrafficLight from "./pages/TrafficLight";
+import DigitalClock from "./pages/DigitalClock";
 export default function App() {
   return (
       <div className="flex h-screen">
@@ -35,6 +36,7 @@ export default function App() {
             <Route path="/starrating" element={<UseStarRating/>}/>
             <Route path="/todolist" element={<TodoList/>}/>
             <Route path="/trafficlight" element={<TrafficLight/>}/>
+            <Route path="/digitalclock" element={<DigitalClock/>}/>
           </Routes>
         </div>
       </div>

@@ -16,7 +16,7 @@ const Sidebar = () => {
     { to: "/starrating", label: "Star Rating" }, 
     { to: "/todolist", label: "Todo List" }, 
     { to: "/trafficlight", label: "Traffic Light" }, 
-
+    { to: "/digitalclock", label: "Digital Clock" }
   ];
 
   return (
