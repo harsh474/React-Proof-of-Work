@@ -7,7 +7,7 @@ const Sidebar = () => {
   const links = [
     { to: "/", label: "About" },
     { to: "/counter", label: "Counter" },
-    { to: "/stopwatch", label: "Stopwatch" },
+    // { to: "/stopwatch", label: "Stopwatch" },
     { to: "/usearray", label: "Usearray" },
     { to: "/usedebounce", label: "UseDebounce" },
     { to: "/datatable", label: "Pagination & DataTable" },
@@ -17,7 +17,9 @@ const Sidebar = () => {
     { to: "/todolist", label: "Todo List" }, 
     { to: "/trafficlight", label: "Traffic Light" }, 
     { to: "/digitalclock", label: "Digital Clock" },
-    { to: "/tictac", label: "Tic Tac Toe" }
+    { to: "/tictac", label: "Tic Tac Toe" },
+    { to: "/jobboards", label: "Job Board" },
+    { to: "/stopwatch2", label: "Stopwatch" }
   ];
 
   return (

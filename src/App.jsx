@@ -15,6 +15,8 @@ import TodoList from "./pages/TodoList";
 import TrafficLight from "./pages/TrafficLight";
 import DigitalClock from "./pages/DigitalClock";
 import Tic_tac_toe from "./pages/Tic_tac_toe";
+import JobBoard from "./pages/JobBoard";
+import Stopwatch2 from "./pages/Stopwatch2";
 export default function App() {
   return (
       <div className="flex h-screen">
@@ -39,6 +41,8 @@ export default function App() {
             <Route path="/trafficlight" element={<TrafficLight/>}/>
             <Route path="/digitalclock" element={<DigitalClock/>}/>
             <Route path="/tictac" element={<Tic_tac_toe/>}/>
+            <Route path="/jobboards" element={<JobBoard/>}/>
+            <Route path="/stopwatch2" element={<Stopwatch2/>}/>
           </Routes>
         </div>
       </div>
