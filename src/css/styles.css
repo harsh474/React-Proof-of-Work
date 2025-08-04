@@ -12,3 +12,18 @@ body {
   background-color: #f00;
 }  
 
+.flexcol{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html, body {
+   height: 100vh; /* Sets the height to 100% of the viewport height */
+  margin: 0;
+  padding: 0;
+}

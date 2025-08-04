@@ -7,8 +7,12 @@ const Sidebar = () => {
   const links = [
     { to: "/", label: "About" },
     { to: "/counter", label: "Counter" },
-    // { to: "/stopwatch", label: "Stopwatch" },
-    { to: "/usearray", label: "Usearray" },
+    { to: "/counter2", label: "Counter II" },
+    { to: "/cycle", label: "Use Cycle Hook" },
+    { to: "/mortgagecalculator", label: "Mortgage Calculator" },
+    { to: "/tabs", label: "Multiples Tabs" },
+    { to: "/customarrayhook", label: "Custom Array Hook" },
+    { to: "/useclickanywhere", label: "Click Any Where" },
     { to: "/usedebounce", label: "UseDebounce" },
     { to: "/datatable", label: "Pagination & DataTable" },
     { to: "/diceroller", label: "Dice Roller" },
@@ -19,7 +23,8 @@ const Sidebar = () => {
     { to: "/digitalclock", label: "Digital Clock" },
     { to: "/tictac", label: "Tic Tac Toe" },
     { to: "/jobboards", label: "Job Board" },
-    { to: "/stopwatch2", label: "Stopwatch" }
+    { to: "/stopwatch2", label: "Stopwatch" },
+    { to: "/transerferlist", label: "Transfer List" },
   ];
 
   return (

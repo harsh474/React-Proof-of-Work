@@ -17,19 +17,32 @@ import DigitalClock from "./pages/DigitalClock";
 import Tic_tac_toe from "./pages/Tic_tac_toe";
 import JobBoard from "./pages/JobBoard";
 import Stopwatch2 from "./pages/Stopwatch2";
+import UseClickAnyWhere from "./pages/UseClickAnyWhere";
+import CounterII from "./pages/CounterII";
+import Cycle from "./pages/Cycle";
+import MortgageCalculator from "./pages/MortgageCalculator";
+import Tabs from "./pages/Tabs";
+import CustomArrayHook from "./pages/CustomArrayHook";
+import TransferList from "./pages/TransferList";
 export default function App() {
   return (
-      <div className="flex h-screen">
+      <div className="flex" >
         {/* Sidebar - 15% width */}
         <Sidebar />
 
         {/* Main Content - 85% width */}
-        <div className="flex-1 p-6  overflow-y-auto " style={{color:'black', backgroundColor:'lightyellow'}}  >
+        <div className="flex-1 p-6" style={{color:'black', backgroundColor:'lightyellow'}}  >
           <Routes>
             <Route path="/learning" element={<Learning/>} />
             <Route path="/" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/counter" element={<Counter/>} />
+            <Route path="/counter" element={<Counter/>} /> 
+            <Route path="/counter2" element={<CounterII/>} /> 
+            <Route path="/cycle" element={< Cycle/>} /> 
+            <Route path="/mortgagecalculator" element={<MortgageCalculator/>} /> 
+            <Route path="/tabs" element={<Tabs/>} /> 
+            <Route path="/customarrayhook" element={<CustomArrayHook/>} /> 
+            <Route path="/Useclickanywhere" element={<UseClickAnyWhere/>} /> 
             <Route path="/stopwatch" element={<Stopwatch/>} />
             <Route path="/usearray" element={<Usearray/>}/>
             <Route path="/usedebounce" element={<UseDebounce/>}/>
@@ -43,6 +56,7 @@ export default function App() {
             <Route path="/tictac" element={<Tic_tac_toe/>}/>
             <Route path="/jobboards" element={<JobBoard/>}/>
             <Route path="/stopwatch2" element={<Stopwatch2/>}/>
+            <Route path="/transerferlist" element={<TransferList/>}/>
           </Routes>
         </div>
       </div>

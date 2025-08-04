@@ -1,0 +1,13 @@
+/* Button.css */
+.button-inactive {
+  background-color: gray;
+  color: white;
+  padding: 10px 20px;
+}
+
+.button-active {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: 2px blue;
+}
