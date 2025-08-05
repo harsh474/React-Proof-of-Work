@@ -25,6 +25,7 @@ const Sidebar = () => {
     { to: "/jobboards", label: "Job Board" },
     { to: "/stopwatch2", label: "Stopwatch" },
     { to: "/transerferlist", label: "Transfer List" },
+    { to: "/nestedcheckbox", label: "Nested Checkbox" },
   ];
 
   return (

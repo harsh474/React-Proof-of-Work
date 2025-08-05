@@ -24,6 +24,7 @@ import MortgageCalculator from "./pages/MortgageCalculator";
 import Tabs from "./pages/Tabs";
 import CustomArrayHook from "./pages/CustomArrayHook";
 import TransferList from "./pages/TransferList";
+import NestedCheckboxes from "./pages/NestedCheckboxes";
 export default function App() {
   return (
       <div className="flex" >
@@ -57,6 +58,7 @@ export default function App() {
             <Route path="/jobboards" element={<JobBoard/>}/>
             <Route path="/stopwatch2" element={<Stopwatch2/>}/>
             <Route path="/transerferlist" element={<TransferList/>}/>
+            <Route path="/nestedcheckbox" element={<NestedCheckboxes/>}/>
           </Routes>
         </div>
       </div>
