@@ -1,0 +1,32 @@
+/* .boxsize {
+  padding: 12px;
+  border: 3px solid black;
+  max-width: 64px;  
+  font-size:xx-large; 
+  justify-content: center; 
+  align-items: center;
+  /* width: fit-content; 
+  height: 64px;
+  color: rgb(80, 80, 87);
+}  */
+.boxsize {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center; /* ✅ Cursor centered horizontally */
+  vertical-align: middle;
+  line-height: 40px;   /* ✅ Helps vertically center the text */
+  border: 1px solid gray;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+
+.heightlightbox {
+  border: 2px solid #007BFF; /* Blue border */
+  transform: scale(1.05);    /* Slightly enlarge */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: all 0.1s ease-in-out;
+  position: relative;
+  z-index: 1; /* Bring to front */
+}

@@ -26,6 +26,7 @@ const Sidebar = () => {
     { to: "/stopwatch2", label: "Stopwatch" },
     { to: "/transerferlist", label: "Transfer List" },
     { to: "/nestedcheckbox", label: "Nested Checkbox" },
+    { to: "/otpinput", label: "OTP Input" },
   ];
 
   return (
