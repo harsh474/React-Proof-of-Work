@@ -1,16 +1,14 @@
 import { interpolate } from 'framer-motion';
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 
 function Checkboxes(props) {
+  const parent_ref = useRef(null);
   const [boxes, setBoxes] = useState(props.defaultCheckboxData);
 
   const find_node = (current_box, index) => {
-    console.log("find_node is called", index);
 
     for (const child of current_box) {
-      console.log("id", child.id);
-      console.log("index", index);
-      console.log(child.id === index);
+
 
       if (child.id === index) return child;
 
@@ -23,22 +21,21 @@ function Checkboxes(props) {
     return null;  // Return null if not found
   };
 
-  const parent_node = (current_box, index) => {
-    console.log("parent_node is called", index);
-
+  const parent_node = (current_box, index,parent_box) => {
+    // console.log("parent_node is called", index); 
+    console.log("current_box", current_box);
     for (const child of current_box) {
       if (child.id === index) {
-        return current_box.find(parent =>
-          parent.children?.some(c => c.id === index)
-        ); // this finds the actual parent object
+        console.log("child", child)
+        parent_box?parent_ref.current = parent_box:null;
+        // console.log("parent_ref",parent_ref.current);
+        return child;
       }
-
       if (child.children) {
-        const result = parent_node(child.children, index);
-        if (result) return result;
+        const result = parent_node(child.children, index,child);
+        if (result) return result;  // Stop further search once found
       }
     }
-
     return null;  // Not found
   };
 
@@ -46,7 +43,9 @@ function Checkboxes(props) {
 
 
   const parent = (current_box, index) => {
-    const parent_element = parent_node(current_box, index);
+    parent_node(current_box, index,null);
+    const parent_element = parent_ref.current ? parent_ref.current : null; 
+    if(parent_element===null) return ; 
     console.log("parent_element", parent_element)
     parent_element.count += 1;
     if (parent_element.count === parent_element.children.length) {
@@ -69,9 +68,10 @@ function Checkboxes(props) {
     let current_node = find_node(current_box, index);
     console.log("clickhandler called ", current_node)
     current_node.checked = value;
-    // parent(current_box, index);
+    parent(current_box, index);
     current_node.children && child_same(current_node.children, value);
     setBoxes(current_box);
+    parent_ref.current = null;
   }
 
 
