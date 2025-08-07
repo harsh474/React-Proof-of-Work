@@ -27,6 +27,7 @@ const Sidebar = () => {
     { to: "/transerferlist", label: "Transfer List" },
     { to: "/nestedcheckbox", label: "Nested Checkbox" },
     { to: "/otpinput", label: "OTP Input" },
+    { to: "/fileexplorer", label: "File Explorer" },
   ];
 
   return (

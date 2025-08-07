@@ -26,6 +26,7 @@ import CustomArrayHook from "./pages/CustomArrayHook";
 import TransferList from "./pages/TransferList";
 import NestedCheckboxes from "./pages/NestedCheckboxes";
 import OtpInput from "./pages/OtpInput";
+import FlieExplorer from "./pages/FlieExplorer";
 export default function App() {
   return (
       <div className="flex" >
@@ -61,6 +62,7 @@ export default function App() {
             <Route path="/transerferlist" element={<TransferList/>}/>
             <Route path="/nestedcheckbox" element={<NestedCheckboxes/>}/>
             <Route path="/otpinput" element={<OtpInput/>}/>
+            <Route path="/fileexplorer" element={<FlieExplorer/>}/>
           </Routes>
         </div>
       </div>
