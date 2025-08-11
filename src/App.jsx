@@ -31,12 +31,12 @@ import StickyNotes from "./pages/StickyNotes";
 import Positions from "./pages/Positions";
 export default function App() {
   return (
-      <div className="flex" style={{height:'100%',border:'10px solid black'}} >
+      <div className="flex" style={{border:'10px solid black'}} >
         {/* Sidebar - 15% width */}
         <Sidebar />
 
         {/* Main Content - 85% width */}
-        <div className="flex-1 p-6" style={{color:'black',height:'100%', backgroundColor:'lightyellow'}}  >
+        <div className="flex-1 p-6" style={{color:'black', backgroundColor:'lightyellow'}}  >
           <Routes>
             <Route path="/learning" element={<Learning/>} />
             <Route path="/" element={<About />} />

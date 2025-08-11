@@ -22,8 +22,3 @@ body {
   flex-direction: row;
   gap: 4px;
 }
-html, body {
-   height: 100vh; /* Sets the height to 100% of the viewport height */
-  margin: 0;
-  padding: 0;
-}
