@@ -1,0 +1,38 @@
+.style_class{ 
+     width: 100px;
+     height:200px; 
+     /* background-color: aqua;  */
+} 
+#div1{  
+  background-color: aqua;
+  position: relative; 
+  /* top: 100px;  */
+  /* left: 12px; */
+} 
+#div2{  
+  background-color: rgb(212, 196, 44);
+  position: absolute; 
+  top: 10px;   
+  left: 120px;
+  /* left: 300px;
+  /* postion relative means it top left will be from current it position and its space will be maintined even after the changing the position  */ 
+  
+}
+#div3{  
+  background-color: rgb(137, 167, 68);
+  position: relative;  
+  left: auto; 
+  top: auto;
+  /* top: 100px;  */
+  /* left: 100px; */
+}
+#div4{  
+  background-color: rgb(145, 24, 118);
+  position: relative; 
+  /* top: 100px;  */
+
+} 
+.container {
+  position: relative;
+  /* margin-left: 200px; */
+}

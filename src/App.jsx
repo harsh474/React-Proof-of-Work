@@ -27,14 +27,16 @@ import TransferList from "./pages/TransferList";
 import NestedCheckboxes from "./pages/NestedCheckboxes";
 import OtpInput from "./pages/OtpInput";
 import FlieExplorer from "./pages/FlieExplorer";
+import StickyNotes from "./pages/StickyNotes";
+import Positions from "./pages/Positions";
 export default function App() {
   return (
-      <div className="flex" >
+      <div className="flex" style={{height:'100%',border:'10px solid black'}} >
         {/* Sidebar - 15% width */}
         <Sidebar />
 
         {/* Main Content - 85% width */}
-        <div className="flex-1 p-6" style={{color:'black', backgroundColor:'lightyellow'}}  >
+        <div className="flex-1 p-6" style={{color:'black',height:'100%', backgroundColor:'lightyellow'}}  >
           <Routes>
             <Route path="/learning" element={<Learning/>} />
             <Route path="/" element={<About />} />
@@ -63,6 +65,8 @@ export default function App() {
             <Route path="/nestedcheckbox" element={<NestedCheckboxes/>}/>
             <Route path="/otpinput" element={<OtpInput/>}/>
             <Route path="/fileexplorer" element={<FlieExplorer/>}/>
+            <Route path="/stickynotes" element={<StickyNotes/>}/>
+            <Route path="/positions" element={<Positions/>}/>
           </Routes>
         </div>
       </div>

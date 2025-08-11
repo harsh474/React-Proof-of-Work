@@ -28,14 +28,19 @@ const Sidebar = () => {
     { to: "/nestedcheckbox", label: "Nested Checkbox" },
     { to: "/otpinput", label: "OTP Input" },
     { to: "/fileexplorer", label: "File Explorer" },
+    { to: "/stickynotes", label: "Sticky Notes" },
+    { to: "/positions", label: "Positions" },
+    { to: "/positions", label: "Positions" },
+    { to: "/positions", label: "Positions" },
+    { to: "/positions", label: "Positions" },
   ];
 
   return (
-    <div className="w-[15%] bg-gray-800 text-white p-6 h-full flex flex-col">
-      <Link to="/" className="hover:text-yellow-400">
-        <h1 className="text-2xl font-bold mb-8 text-amber-200">React JS Projects</h1>
+    <div className="w-[15%] bg-gray-800 text-white p-6 h-full flex flex-col" style={{alignItems:'center',border:'2px solid red'}}>
+      <Link to="/" className=" hover:text-yellow-400 mb-8 ">
+        <h1 className="text-2xl font-bold mb-8 text-amber-200 pb-7 pt-6" >React JS Projects</h1>
       </Link>
-      <nav className="flex flex-col gap-2">
+      <nav className="flex flex-col gap-5 h-full">
         {links.map((link) => (
           <Link
             key={link.to}
