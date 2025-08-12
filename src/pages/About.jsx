@@ -7,7 +7,7 @@ import ContactSection from '../components/ContactSection';
 
 export default function About() {
   return (
-    <div className="bg-gray-950 text-white min-h-screen">
+    <div className="bg-gray-950 text-white">
       <HeroSection />
       <AboutSection />
       <SkillsSection />
