@@ -1,0 +1,21 @@
+.div{ 
+     width: 122px; 
+     height: 122px; 
+     background-color: aquamarine; 
+     display: flex; 
+     align-items: center; 
+     justify-content: center; 
+     animation-name: example; 
+     animation-duration: 2s; 
+     animation-iteration-count: 3; 
+     animation-timing-function: linear; 
+     animation-delay: 2s;
+}
+@keyframes example {
+     from{ 
+       background-color: brown;
+     }
+     to{ 
+        background-color: black;
+     }
+}

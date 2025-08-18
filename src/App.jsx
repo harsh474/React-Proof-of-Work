@@ -29,6 +29,9 @@ import OtpInput from "./pages/OtpInput";
 import FlieExplorer from "./pages/FlieExplorer";
 import StickyNotes from "./pages/StickyNotes";
 import Positions from "./pages/Positions";
+import FadeDemo from "./pages/FadeDemo";
+import CssAnimation from "./pages/CssAnimation";
+import BoxShadow from "./pages/BoxShadow";
 export default function App() {
   return (
       <div className="flex h-full">
@@ -36,7 +39,7 @@ export default function App() {
           <Sidebar  />
         
         {/* Main Content - 85% width */}
-        <div className="flex-1" style={{color:'black', backgroundColor:'lightyellow', paddingInlineStart:'73px',paddingBlockStart:'78px'}}  >
+        <div className="flex-1" style={{color:'black', backgroundColor:'lightyellow', paddingInline:'13px',paddingBlock:'18px'}}  >
           <Routes>
             <Route path="/learning" element={<Learning/>} />
             <Route path="/" element={<About />} />
@@ -67,6 +70,9 @@ export default function App() {
             <Route path="/fileexplorer" element={<FlieExplorer/>}/>
             <Route path="/stickynotes" element={<StickyNotes/>}/>
             <Route path="/positions" element={<Positions/>}/>
+            <Route path="/fade" element={<FadeDemo/>}/>
+            <Route path="/animation" element={<CssAnimation/>}/>
+            <Route path="/box-shadow" element={<BoxShadow/>}/>
           </Routes>
         </div>
       </div>

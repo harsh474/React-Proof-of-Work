@@ -1,0 +1,46 @@
+/* Basic Fade */
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+/* Delay version */
+.delay {
+  transition: opacity 0.5s ease 0.3s; /* Delay of 0.3s */
+}
+
+/* Fade + Slide */
+.fade-slide {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-slide.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Overlay */
+.overlay {
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  transition: opacity 0.5s ease;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Sequential Fade List */
+.fade-list {
+  margin: 5px 0;
+}

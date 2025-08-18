@@ -1,0 +1,6 @@
+.box{ 
+     width: 122px; 
+     height: 122px;  
+     background-color: aqua; 
+     box-shadow: 12px 12px 12px red;
+}

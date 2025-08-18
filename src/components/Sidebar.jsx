@@ -14,20 +14,20 @@ const Sidebar = () => {
     {
       id: 0,
       name: "React",
-      current: true,
+      current: false,
       link_name: react_links
     },
     {
       id: 1,
       name: "Js",
-      current: true,
+      current: false,
       link_name: js_links,
 
     },
     {
       id: 2,
       name: "Css",
-      current: true,
+      current: false,
       link_name: css_links,
 
     },
@@ -41,7 +41,7 @@ const Sidebar = () => {
     setItem(temp);
   }
   return (
-    <div className="w-[15%] h-full  bg-gray-800 text-white flex flex-col" style={{ paddingTop: '23px', paddingLeft: '23px', gap: '46px', overflowY: 'scroll' }} >
+    <div className="w-[15%] h-full  bg-gray-800 text-white flex flex-col" style={{ paddingBlock: '13px', paddingLeft: '23px', gap: '10px', overflowY: 'scroll' }} >
 
       {
         item.map((item) => {
@@ -53,7 +53,7 @@ const Sidebar = () => {
                 <span onClick={() => change_enabled_status(item.id, !item.current)}><MdExpandMore /></span> :
                 <span onClick={() => change_enabled_status(item.id, !item.current)}><MdExpandLess /></span>)}
               <Link to="/" className=" hover:text-yellow-400 h-full">
-                <h1 className="text-2xl font-bold mb-8 text-amber-200 pb-7 pt-6" >{item.name}</h1>
+                <h1 className="text-xl font-bold mb-4 text-amber-200 pb-7 pt-6" >{item.name}</h1>
               </Link>
             </div>
             <DisplayLink links={item.link_name} display_status={item.current} />
